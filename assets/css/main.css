@@ -1,0 +1,183 @@
+* {
+    font-family: 'Space Grotesk', sans-serif !important;
+}
+
+.text-color {
+    color: hsl(279, 6%, 55%); 
+}
+
+.bg-top-mobile {
+    background: url('/images/bg-main-mobile.png');
+    width: 100%;
+    background-size: 100% auto; 
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: auto;   
+}
+
+.form-infor {
+    position: relative; 
+}
+
+.card-infor { 
+}
+
+.card-bg {
+    position: absolute;      
+    
+    width: 78%; 
+}
+
+.card-bg.font {
+    left: 20px;
+    top: -110px;
+}
+
+.card-bg.back {  
+    right: 20px; 
+    top: -200px; 
+}
+
+.card-bg-img {
+    width: 100%;
+}
+
+.card-font-infor {
+    top: 0;
+    left: 0;  
+    height: 100%;
+    width: 100%;
+    padding: 16px;
+}
+
+.card-logo {   
+}
+
+.card-number {
+    color: hsl(270, 3%, 87%);  
+    font-size: 20px;
+    letter-spacing: 2px; 
+    display: flex;
+    align-items: flex-end;
+}
+
+.card-name,
+.card-date {
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+    color: hsl(270, 3%, 87%);
+    font-size: 14px;
+}
+
+.card-sercurity { 
+    top: calc(50% - 14px);
+    right: 12%; 
+    color: hsl(270, 3%, 87%);
+    letter-spacing: 1px;
+}
+
+.card-infor-form {
+    padding-top: 80px;
+}
+
+.card-infor-form label {
+    text-transform: uppercase;  
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 6px 0;
+    font-size: 14px;
+}
+
+.card-infor-form input {
+    padding: 10px 12px;
+    outline: none;
+    border: 1px solid hsl(270, 3%, 87%);
+    border-radius: 10px;
+    margin-bottom: 18px;
+}
+
+.card-infor-form input:focus { 
+    border: 1px solid hsl(249, 99%, 64%);
+}
+
+.card-infor-form input::placeholder {
+    color: hsl(270, 3%, 87%);
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+
+.input-date { 
+    display: flex;
+    flex-wrap: wrap;  
+    width: 50%;
+    flex: 0 0 50%;  
+}
+
+.input-date input {    
+} 
+
+.error {
+    width: 100%;
+    color: hsl(0, 100%, 66%); 
+    height: 24px;
+}
+
+.error-input {
+    border: 1px solid hsl(0, 100%, 66%) !important;
+}
+
+.submit-btn {   
+    width: 100%;
+    padding: 16px 0;
+}
+
+/* Completed */ 
+
+.completed-thanks {
+    letter-spacing: 2px;
+    font-size: 32px;
+}
+
+.bg-desktop {
+    display: none;
+}
+
+@media (min-width:720px) {
+    .bg-top-mobile {
+        display: none;
+    }
+
+    .bg-desktop {
+        display: block;
+        background:url(/images/bg-main-desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    } 
+
+    .bg-desktop>img {
+        width: 100%;
+    } 
+
+    .card-bg { 
+        width: 400px;     
+    }
+
+    .card-bg.font {  
+        top: 15%;
+        left: -60%;
+    }
+
+    .card-bg.back {  
+        top: 50%;
+        left: -50%; 
+    }
+
+    .card-infor-form { 
+        padding: 100px;
+        height: 100vh;
+        display: flex; 
+        align-items: center;
+    }
+}

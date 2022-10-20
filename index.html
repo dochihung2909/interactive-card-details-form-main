@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="./assets/css/main.css">
+
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container-fluid g-0">
+    <div class="row g-0">
+      <div class="bg-top-mobile col-12 col-lg-0">
+        <img src="./images/bg-main-mobile.png" alt="">  
+      </div>
+      <div class="bg-desktop col-0 col-lg-3"></div>
+      <div class="col-0 col-lg-2"></div>
+      <div class="form-infor col-12 col-lg-7">
+        <div class="card-infor"> 
+          <div class="card-bg back">
+            <img class="card-bg-img" src="./images/bg-card-back.png" alt="">
+            <span class="card-sercurity position-absolute">000</span>
+          </div>
+          <div class="card-bg font">
+            <img class="card-bg-img" src="./images/bg-card-front.png" alt="">
+            <div class="card-font-infor position-absolute row g-0">
+              <div class="card-logo"> 
+                <svg viewBox="22 0 80 75" width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
+              </div>
+              <span class="card-number">0000 0000 0000 0000</span>
+              <div style="display: flex;" class="align-items-end justify-content-between">
+                <span class="card-name">Do Chi Hung</span>
+                <span class="card-date"><span class="card-month">00</span>/<span class="card-year">00</span></span>
+              </div>
+            </div> 
+          </div>
+        </div> 
+        <!-- Form -->
+        <div class="card-infor-form container">
+          <form action="">
+            <div class="input-name row g-0 mb-2">
+              <label class="col-12" for="name-input">Cardholder Name</label>
+              <input class="col-12 m-0" type="text" maxlength="20" name="name-input" id="name-input" placeholder="e.g. Do Chi Hung">
+              <span class="error error-name"></span>
+            </div>
+  
+            <div class="input-number row g-0 mb-2">
+              <label class="col-12" for="card-number-inp">Card Number</label>
+              <input class="col-12 m-0" type="text" maxlength="19" name="card-num-input" id="card-number-inp" placeholder="e.g. 1234 5678 9123 0000">
+              <span class="error error-number"></span> 
+            </div>
+            <div class="row"> 
+              <div class="col-6 input-date mb-2"> 
+                <label class="col-12" for="">Exp. Date (MM/YY)</label>
+                <input class="col-6  m-0" id="input-month" type="text" maxlength="2" placeholder="MM">
+                <input class="col-6  m-0" id="input-year" type="text"  maxlength="2" placeholder="YY">
+                <span class="error error-date"></span>  
+              </div>
+              <div class="col-6 input-cvc mb-2">
+                <label class="col-12" for="">CVC</label>
+                <input class="col-12 m-0" id="cvc-input" type="text" maxlength="3" placeholder="e.g. 123">
+                <span class="error error-cvc"></span>  
+              </div>
+            </div> 
+            <button id="confirm" type="button" class="mb-4 btn btn-dark submit-btn">Confirm</button>
+          </form>  
+          
+        </div> 
+      </div>
+    </div>
+  </div>    
+  
+
+  <!-- Completed state start -->
+
+  <!-- Thank you!
+  We've added your card details
+  Continue -->
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
